@@ -1,17 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { promise } from 'protractor';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './include/header/header.component';
 import { FromEventComponent } from './observable/from-event/from-event.component';
 import { ListComponent } from './observable/list/list.component';
 import { ObservableComponent } from './observable/observable.component';
+import { PromiseComponent } from './promise/promise.component';
 
 const routes: Routes = [
-  {path: "", component: ObservableComponent, children: [
+  {path: "", component: PromiseComponent},
+  {path: "promise", component: PromiseComponent},
+  {path: "observable", component: ObservableComponent, children: [
     {path: '', component: ListComponent},
     {path: 'fromEvent', component: FromEventComponent}
   ]}
-  // {path: "promise"}
+  
 ];
 
 @NgModule({

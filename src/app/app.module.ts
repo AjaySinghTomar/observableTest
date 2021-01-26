@@ -8,6 +8,7 @@ import { FooterComponent } from './include/footer/footer.component';
 import { FromEventComponent } from './observable/from-event/from-event.component';
 import { ListComponent } from './observable/list/list.component';
 import { ObservableComponent } from './observable/observable.component';
+import { PromiseComponent } from './promise/promise.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ObservableComponent } from './observable/observable.component';
     FooterComponent,
     FromEventComponent,
     ListComponent,
-    ObservableComponent
+    ObservableComponent,
+    PromiseComponent
   ],
   imports: [
     BrowserModule,
