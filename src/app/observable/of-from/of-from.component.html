@@ -1,3 +1,52 @@
-<p>
-  of-from works!
-</p>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">
+        of('ajay', 'singh', 'tomar')
+      </div>
+      <div class="card-body">
+        <ul id="ofOperator1"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">
+        of(&#123;'ajay', 'singh', 'tomar'&#125;)
+      </div>
+      <div class="card-body">
+        <ul id="ofOperator2">
+          <li>{{obsMsg.a}}</li>
+          <li>{{obsMsg.b}}</li>
+          <li>{{obsMsg.c}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+<br><hr>
+<div class="row">
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">
+        from(['ajay', 'singh', 'tomar'])
+      </div>
+      <div class="card-body">
+        <ul id="ofOperator3"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-header">
+        promise to observable
+      </div>
+      <div class="card-body">
+        <ul>{{promiseRes}}</ul>
+      </div>
+    </div>
+  </div>
+</div>

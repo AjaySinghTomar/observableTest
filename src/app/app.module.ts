@@ -11,6 +11,7 @@ import { ObservableComponent } from './observable/observable.component';
 import { PromiseComponent } from './promise/promise.component';
 import { IntervalComponent } from './observable/interval/interval.component';
 import { OfFromComponent } from './observable/of-from/of-from.component';
+import { ToArrayComponent } from './observable/to-array/to-array.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { OfFromComponent } from './observable/of-from/of-from.component';
     ObservableComponent,
     PromiseComponent,
     IntervalComponent,
-    OfFromComponent
+    OfFromComponent,
+    ToArrayComponent
   ],
   imports: [
     BrowserModule,
